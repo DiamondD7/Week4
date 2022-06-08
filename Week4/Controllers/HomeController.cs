@@ -28,9 +28,9 @@ namespace Week4.Controllers
         {
             return View();
         }
-        public IActionResult Navigate()
+        public IActionResult NavigateToPrivacyPage()
         {
-            return RedirectToAction(nameof(Privacy));
+            return View(nameof(Privacy));
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
